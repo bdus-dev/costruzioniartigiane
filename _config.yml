@@ -1,0 +1,23 @@
+title: Ecostrutture SRL & Studio Tecnico Geom. Franchini Roberto
+description: >
+  Studio Tecnico Geometra Franchini Roberto e Impresa Edile Artigiana Ecostrutture srl, sede legale a Castelvetro e sede distaccata a Mirandola, Provincia di Modena. Progettazione DL e realizzazione di Costruzioni e Ristrutturazioni di abitazione/i, condomini, capannone/i. Richieste di contributi per ricostruzione post-sisma (terremoto Emilia Romagna)e accatastamenti.
+exclude:
+  - site
+  - Gemfile
+  - Gemfile.lock
+
+google_analytics: UA-10461068-23
+
+sass:
+    sass_dir: _sass
+
+collections:
+  ecostrutture:
+    output: true
+  staudiotecnico:
+    output: true
+
+
+defaults:
+  - values:
+      layout: default

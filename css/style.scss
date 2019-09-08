@@ -1,0 +1,189 @@
+---
+---
+
+/*
+ * variabili di primo livello: colori base.
+ */
+$vinaccia: #5b001f;
+
+
+/*
+ * variabili di secondo livello: struttura sito
+ */
+$color-ecostrutture: $vinaccia;
+
+$color-studio: $vinaccia;
+
+$color-home: $vinaccia;
+
+$color-generic: $vinaccia;
+
+
+
+
+/*
+ * MAIN SITE STRUCTURE MIXIN
+ */
+@mixin mainStructure($color){
+	background: url("../images/css/bg.png") repeat;
+	header{
+	    background: $color;
+	    background-image: url('../images/css/immagini/content-header_02.png');
+	    background-position: left;
+	    height: 220px;
+	    box-shadow: 0 0px 10px $color;
+
+	    .logo-head{
+	    	background: fadeout($color, 30);
+		}
+	}
+	h1, h2, h3, h3, h4, a{
+		color: $color;
+		text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	}
+
+  ul.left{
+    list-style: none;
+    margin: 0;
+    li{
+      font-size: 1.2em;
+      padding:5px 10px;
+
+      a{
+        padding: 10px 0;
+      }
+      &.divider{
+        background-color: transparent;
+        border-bottom: 1px dotted $color;
+      }
+      &.active a{
+        font-weight: bold;
+      }
+
+      ul.submenu{
+        list-style: none;
+        margin: 0;
+        padding: 0 0 0 7px;
+
+        li{
+          font-size: 1em;
+          padding: 0;
+        }
+      }
+    }
+  }
+
+	.menu_side{
+		border-right: 1px dotted $color;
+	}
+	blockquote {
+		border-left: 5px solid lighten($color, 5);
+		color: lighten($color, 5);
+
+		small{
+			color: lighten($color, 5);
+		}
+	}
+}
+
+body.home{
+	background: url("../images/css/bg.png") repeat;
+	header{
+		background: url("../images/css/home-header.png") no-repeat scroll center top;
+
+		padding: 400px 0 0 0;
+
+		.vcard{
+			background: $color-home;
+			box-shadow: 0 0px 10px $color-home;
+
+			a{
+				img{
+					margin: 3px;
+					padding:5px;
+					&:hover{
+						box-shadow: 0px 0px 5px #fff;
+						-moz-box-shadow: 0px 0px 5px #fff;
+						-webkit-box-shadow: 0px 0px 5px #fff;
+					}
+				}
+			}
+		}
+
+		.motto{
+			text-align: center;
+			color: $color-home;
+			padding: 30px 0 0 0;
+		}
+	}
+	h1, h2, h3, h3, h4, a{
+		color: $color-home;
+	}
+}
+
+
+
+body.ecostrutture{
+	@include mainStructure($color-ecostrutture);
+}
+
+body.studiotecnico{
+	@include mainStructure($color-studio);
+}
+
+body.generic{
+	@include mainStructure($color-generic);
+}
+
+
+.content{
+	margin: 50px auto;
+}
+
+
+footer{
+	padding-top: 20px;
+	.sub h1{
+		font-size:1.2em;
+	}
+
+	.company{
+		text-align: center;
+	}
+
+	ul.foot{
+		list-style:none;
+		padding:0;
+		margin:0;
+
+	}
+}
+
+.fancybox{
+	border: none;
+}
+
+
+ul.realizzazioni{
+	li{
+		list-style: none;
+		float: left;
+		margin: 20px;
+		height: 300px;
+		img{
+			border: 1px solid #fff;
+		}
+		div.caption{
+			width:180px;
+			text-align: center;
+			color: $vinaccia;
+		}
+	}
+
+	&:after{
+		display: table;
+	    content: "";
+	    line-height: 0;
+	    clear: both;
+	}
+}
