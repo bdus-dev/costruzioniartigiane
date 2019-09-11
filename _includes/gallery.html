@@ -7,7 +7,7 @@
 
     <li data-id="{{ image.basename }}">
       <a href="{{ image.path | relative_url }}" class="fancybox" title="{{ site.data.galleries[include.gallery][image.basename] }}" rel="true">
-        <img src="{{ image.path | replace: include.gallery, rpl }}" alt="{{ site.data.galleries[include.gallery][image.basename] }}">
+        <img src="{{ image.path | replace: include.gallery, rpl | relative_url }}" alt="{{ site.data.galleries[include.gallery][image.basename] }}">
       </a>
       <div class="caption">{{ site.data.galleries[include.gallery][image.basename] }}</div>
     </li>
