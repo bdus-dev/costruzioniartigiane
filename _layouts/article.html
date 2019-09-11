@@ -1,0 +1,56 @@
+---
+layout: default
+---
+
+<header>
+  {% if page.context == 'ecostrutture' or page.context == 'studiotecnico' %}
+  <div class="container">
+    <div class="row">
+      <div class="pull-left logo-head">
+        <img src="{{ 'images/css/logo-' | append: page.context | append: '.png' | relative_url }}" />
+      </div>
+    </div>
+  </div>
+  {% else %}
+  <div class="container">
+    <div class="row">
+      <div class="pull-left logo-head">
+        <img src="{{ 'images/css/logo-ecostrutture.png' | relative_url }}" />
+      </div>
+      <div class="pull-right logo-head">
+        <img src="{{ 'images/css/logo-studiotecnico.png' | relative_url }}" />
+      </div>
+    </div>
+  </div>
+  {% endif %}
+</header>
+
+<div class="container content">
+  <div class="row">
+    <div class="col-sm-3 menu_side">
+      <ul class="menu left {{ page.context }}">
+        <li class="menu-item "><a href="{{'/' | relative_url}}"  title="Pagina principale">Pagina principale</a></li>
+
+        <li class="divider"></li>
+
+        {% for i in site.data[page.context] %}
+        <li class="menu-item{% if page.url == i.url %} active{% endif %}">
+          <a href="{{ i.url | relative_url }}"  title="{{ i.title }}">
+            {{ i.title }}
+          </a>
+        </li>
+        {% endfor %}
+
+        <li class="divider"></li>
+        <li class="menu-item"><a href="{{ 'collaboratori' | relative_url }}" title="Collaboratori dello Studio Tecnico Geometra Franchini">Collaboratori</a></li>
+        <li class="menu-item "><a href="{{ 'cv_franchini' | relative_url}}" title="Curriculum professinale di Roberto Franchini">Curriculum professionale di R. Franchini</a></li>
+        <li class="menu-item "><a href="{{ 'contatti' | relative_url }}" title="Contatti">Contatti</a></li>
+      </ul>
+
+    </div>
+    <div class="col-sm-9">
+      <h1>{{ page.title }}</h1>
+      {{ content }}
+    </div>
+</div>
+</div>

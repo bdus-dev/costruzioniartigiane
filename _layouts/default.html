@@ -3,6 +3,11 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="robots" content="index, follow" />
+
+	<title>{% if page.data %} {{ page.data }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.description %}{{ page.description | strip }}{% else %}{{ site.description | strip }}{% endif %}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<meta name="google-site-verification" content="VEiPramXb8FxglAgUXNn5wZxy-gbTO2szTyJZBf4Nmk" />
   <link rel="stylesheet"
         href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -13,10 +18,9 @@
         integrity="sha256-FNw9LNerc5JpTwbdPRm3uOCLBGX6+21ujYHZMFzQXmQ="
         crossorigin="anonymous" />
 
-	<link rel="shortcut icon" href="./sites/default/images/css/favicon.png">
+	<link rel="shortcut icon" href="{{ 'sites/default/images/css/favicon.png' | relative_url }}">
 
-	<link rel="stylesheet" href="./css/style.css" />
-
+	<link rel="stylesheet" href="{{ 'css/style.css' | relative_url }}" />
 
 	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 	<!--[if lt IE 9]>
@@ -24,18 +28,14 @@
 	<![endif]-->
 </head>
 
-<body class="home">
+<body class="{{ page.context }}">
 
-	<header>
-    {{ content }}
-	</header>
-
-
+	{{ content }}
 
 	<footer class="container">
 		<hr />
 		<div class="sub">
-			<h1><a href="./">Ecostrutture SRL & Studio Tecnico Geom. Franchini Roberto</a></h1>
+			<h1><a href="{{ './' | relative_url }}">Ecostrutture SRL & Studio Tecnico Geom. Franchini Roberto</a></h1>
 		</div>
 
 		<div class="row company">
@@ -62,7 +62,7 @@
 
         <ul class="menu  foot">
           {% for i in site.data.menu_foot %}
-          <li class="menu-item "><a href="{{ i.url }}"  title="{{ i.title }}">{{ i.title }}</a></li>
+          <li class="menu-item "><a href="{{ i.url | relative_url }}"  title="{{ i.title }}">{{ i.title }}</a></li>
           {% endfor %}
         </ul>
   			<br />
@@ -92,7 +92,7 @@
     src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js"
     integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50="
     crossorigin="anonymous"></script>
-  <script src="./js/frontend.js"></script>
+  <script src="{{ 'js/frontend.js' | relative_url }}"></script>
 
   {% include ga.html %}
 </body>

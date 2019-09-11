@@ -14,7 +14,7 @@ sass:
 collections:
   ecostrutture:
     output: true
-  staudiotecnico:
+  studiotecnico:
     output: true
 
 
