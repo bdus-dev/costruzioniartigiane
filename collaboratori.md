@@ -27,8 +27,8 @@ Geom. **Cornia Moreno**
 > <abbr title="Telefono cellulare">Cell.</abbr>: [348 8831677](tel:+393488831677)
 
 **Daniele Cicirelli**
-> Tecnico di cantiere
-> E-mail: [cicirelli@costruzioniartigiane.it](mailto:cicirelli@costruzioniartigiane.it)
+> Tecnico di cantiere  
+> E-mail: [cicirelli@costruzioniartigiane.it](mailto:cicirelli@costruzioniartigiane.it)  
 > <abbr title="Telefono cellulare">Cell.</abbr> [349 6884229](tel:+393496884229)
 
 ###  Collaboratori esterni
