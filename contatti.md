@@ -15,19 +15,12 @@ permalink: /contatti
 
 #### Sede Legale
 
-Via Modena n. 86
+Via Modena n. 86  
 41014 Castelvetro di Modena (Modena), Italia.
 
 ---
 
 #### Sede Distaccata
 
-Via Maestri del Lavoro n. 8
-41037 Mirandola (Modena), Italia.
-
----
-
-#### Sede Distaccata
-
-Corso Canalgrande, nr. 64
-41121 Modena (Modena), Italia.
+Cesare Battisti n.22.  
+41121. Modena (Modena), Italia.
