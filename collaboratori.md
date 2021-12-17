@@ -26,6 +26,11 @@ Geom. **Cornia Moreno**
 > E-mail: [artemusasilvia@libero.it](mailto:artemusasilvia@libero.it)  
 > <abbr title="Telefono cellulare">Cell.</abbr>: [348 8831677](tel:+393488831677)
 
+**Daniele Cicirelli**
+> Tecnico di cantiere
+> E-mail: [cicirelli@costruzioniartigiane.it](mailto:cicirelli@costruzioniartigiane.it)
+> <abbr title="Telefono cellulare">Cell.</abbr> [349 6884229](tel:+393496884229)
+
 ###  Collaboratori esterni
 
 Dott. Geol. **Sargenti Daniele**
@@ -36,5 +41,5 @@ Dott. Geol. **Sargenti Daniele**
 Ing.-Arch. **Mezzadri Giuseppe**
 
 > E-mail: [gmmpl@hotmail.it](mailto:gmmpl@hotmail.it)  
-> Tel. [059 7863044](yel:+390597863044)  
+> Tel. [059 7863044](tel:+390597863044)  
 > <abbr title="Telefono cellulare">Cell.</abbr> [339 6401627](tel:+393396401627)
