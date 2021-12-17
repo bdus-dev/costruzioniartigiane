@@ -16,11 +16,11 @@ permalink: /contatti
 #### Sede Legale
 
 Via Modena n. 86  
-41014 Castelvetro di Modena (Modena), Italia.
+41014\. Castelvetro di Modena (Modena), Italia.
 
 ---
 
 #### Sede Distaccata
 
-Cesare Battisti n.22.  
-41121 Modena (Modena), Italia.
+Via Cesare Battisti n.22.  
+41121\. Modena (Modena), Italia.
